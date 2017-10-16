@@ -1,10 +1,9 @@
+```
+本文書は https://www.krackattacks.com/ の翻訳版です。
+Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/)
+```
+
 # KRACK Attacks: Breaking WPA2
-
-```
-この文書は https://www.krackattacks.com/ を翻訳して作成されました。
-
-[Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/)
-```
 
 鍵再インストール攻撃 (Key Reinstallation Attacks)
 ==========================================
@@ -12,7 +11,7 @@
 ナンスの再利用の強制によるWPA2の突破
 ------------------------------------
 
-### [Mathy Vanhoef](https://twitter.com/vanhoefm) of [imec-DistriNet](https://distrinet.cs.kuleuven.be/), KU Leuven により発見されました。
+### KU Leuven の[imec-DistriNet](https://distrinet.cs.kuleuven.be/)に所属する[Mathy Vanhoef](https://twitter.com/vanhoefm)により発見されました。
 
 目次
 * 概要
@@ -25,13 +24,14 @@
 概要
 ------------
 
-We discovered serious weaknesses in WPA2, a protocol that secures all modern protected Wi-Fi networks.
-An attacker within range of a victim can exploit these weaknesses using <u>k</u>ey <u>r</u>einstallation <u>a</u>tta<u>ck</u>s (KRACKs).
-Concretely, attackers can use this novel attack technique to read information that was previously assumed to be safely encrypted.	
-This can be abused to steal sensitive information such as credit card numbers, passwords, chat messages, emails, photos, and so on.
-**The attack works against all modern protected Wi-Fi networks**.
-Depending on the network configuration, it is also possible to inject and manipulate data.
-For example, an attacker might be able to inject ransomware or other malware into websites.
+我々は近代の保護されたWi-Fiネットワークを守る、WPA2プロトコルの深刻な欠陥を発見しました。
+被害者(victim)の周囲にいる攻撃者は、鍵再インストール攻撃(KRACKs)を用いて欠陥を突くこと(exploit)ができます。
+具体的には、攻撃者は本文書の攻撃手法を用いて、これまでは安全に暗号化されていたはずの情報を読み取ることができます。
+この手法は、センシティブな情報――クレジットカードナンバー、パスワード、チャットメッセージ、電子メール、写真など――の盗みに悪用される可能性があります。
+**攻撃は近代の保護されたWi-Fiネットワークにも有効です。**.
+ネットワーク設定によっては、データを仕込む(inject)することや細工することも可能です。
+例えば、攻撃者はランサムウェアやマルウェアをウェブサイトに仕込むことができるはずです。
+
 
 The weaknesses are in the Wi-Fi standard itself, and not in individual products or implementations.
 Therefore, any correct implementation of WPA2 is likely affected.
