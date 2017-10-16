@@ -15,7 +15,7 @@ Creative Commons Attribution 4.0 International License (http://creativecommons.o
 
 目次
 * 概要
-* Demo
+* デモ
 * Details
 * Paper
 * Tools
@@ -37,13 +37,13 @@ Creative Commons Attribution 4.0 International License (http://creativecommons.o
 攻撃を防ぐため、ユーザーは影響を受ける製品のセキュリティアップデートが手に入り次第、速やかに適用すべきです。
 **あなたのデバイスがWi-Fiをサポートしているならば、まず影響を受ける恐れがある**ことに留意してください。
 我々の初期研究によれば、Android, Linux, Apple, Windows, OpenBSD, MediaTek, Linksys, およびその他はすべて、
-攻撃(some variant of the attacks)の影響を受けます。
+類似の攻撃の影響を受けます。
 特定の製品に関する詳細情報は、[CERT/CCのデータベース](https://www.kb.cert.org/vuls/byvendor?searchview&Query=FIELD+Reference=228519&SearchOrder=4)を参照するか、またはベンダーに問い合わせてください。
 
 攻撃の基礎研究は[Computer and Communications Security (CCS)](https://acmccs.github.io/session-F3/)カンファレンスと[Black Hat Europe](https://www.blackhat.com/eu-17/briefings/schedule/#key-reinstallation-attacks-breaking-the-wpa2-protocol-8861)カンファレンスで公開されます。我々の詳細な研究論文はすでにダウンロードできる状態です。
 
 
-Demonstration
+デモ
 -------------
 
 As a proof-of-concept we executed a key reinstallation attack against an Android smartphone.
