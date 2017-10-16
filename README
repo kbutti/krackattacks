@@ -1,42 +1,15 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+# KRACK Attacks: Breaking WPA2
 
-<title>KRACK Attacks: Breaking WPA2</title>
+    **K**ey **R**einstallation **A**tta**ck**s
+    ==========================================
 
-<meta name="keywords" content="WPA2, KRACK, key reinstallation, security protocols, network security, attacks, nonce reuse, handshake, packet number, initialization vector, Mathy Vanhoef">
+    Breaking WPA2 by forcing nonce reuse
+    ------------------------------------
 
-<meta name="description" content="This website presents the Key Reinstallation Attack (KRACK). It breaks the WPA2 protocol by forcing nonce reuse in encryption algorithms used by Wi-Fi.">
-
-<link href="css/default.css" rel="stylesheet" type="text/css" media="all">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!--[if lt IE 9]>
-	<script src="js/respond.src.js"></script>
-	<![endif]-->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-
-<div id="wrapper">
-    <div id="header-wrapper">
-        <div id="header" class="container">
-            <div id="logo">![](images/logo-small.png)</div>
-
-            <div id="title">
-                **K**ey **R**einstallation **A**tta**ck**s
-                ==========================================
-
-                Breaking WPA2 by forcing nonce reuse
-                ------------------------------------
-
-                ### Discovered by [Mathy Vanhoef](https://twitter.com/vanhoefm) of [imec-DistriNet](https://distrinet.cs.kuleuven.be/), KU Leuven
-            </div>
-        </div>
-    </div>
+    ### Discovered by [Mathy Vanhoef](https://twitter.com/vanhoefm) of [imec-DistriNet](https://distrinet.cs.kuleuven.be/), KU Leuven
 
     <div id="menu-wrapper">
         <div id="main-nav" class="container"><span class="custom-mobile-menu-title" style="display: none;">Nagivate page</span>
-
-
         * Intro
         * Demo
         * Details
