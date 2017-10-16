@@ -32,7 +32,7 @@ Creative Commons Attribution 4.0 International License (http://creativecommons.o
 ネットワーク設定によっては、データを仕込むこと(inject)や細工することも可能です。
 例えば、攻撃者はランサムウェアやマルウェアをウェブサイトに仕込むことができるはずです。
 
-本欠陥はWi-Fi規格そのものにあり、特定の製品や実装にあるわけはありません。
+本欠陥はWi-Fi規格そのものにあり、特定の製品や実装にあるわけではありません。
 つまり、いかなる適切なWPA2の実装であっても、影響を受ける恐れがあります。
 攻撃を防ぐため、ユーザーは影響を受ける製品のセキュリティアップデートが手に入り次第、速やかに適用すべきです。
 **あなたのデバイスがWi-Fiをサポートしているならば、まず影響を受ける恐れがある**ことに留意してください。
@@ -45,8 +45,8 @@ Creative Commons Attribution 4.0 International License (http://creativecommons.o
 デモ
 -------------
 
-As a proof-of-concept we executed a key reinstallation attack against an Android smartphone.
-In this demonstration, the attacker is able to decrypt all data that the victim transmits.
+POC(コンセプトの実証)として、鍵再インストール攻撃をAndroidスマートフォンに仕掛けました。
+このデモでは、攻撃者は被害者の転送している全データを解読できました。
 For an attacker this is easy to accomplish, because our key reinstallation attack is exceptionally devastating against Linux and Android 6.0 or higher.
 This is because **Android and Linux can be tricked into (re)installing an all-zero encryption key** (see below for more info).
 When attacking other devices, it is harder to decrypt all packets, although a large number of packets can nevertheless be decrypted.
