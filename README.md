@@ -27,20 +27,20 @@ Creative Commons Attribution 4.0 International License (http://creativecommons.o
 我々は近代の保護されたWi-Fiネットワークを守る、WPA2プロトコルの深刻な欠陥を発見しました。
 被害者(victim)の周囲にいる攻撃者は、鍵再インストール攻撃(KRACKs)を用いて欠陥を突くこと(exploit)ができます。
 具体的には、攻撃者は本文書の攻撃手法を用いて、これまでは安全に暗号化されていたはずの情報を読み取ることができます。
-この手法は、センシティブな情報――クレジットカードナンバー、パスワード、チャットメッセージ、電子メール、写真など――の盗みに悪用される可能性があります。
-**攻撃は近代の保護されたWi-Fiネットワークにも有効です。**.
+この手法は、センシティブな情報――クレジットカード番号、パスワード、チャットメッセージ、電子メール、写真など――の盗みに悪用される可能性があります。
+**攻撃は近代の保護されたWi-Fiネットワークにも有効です。**
 ネットワーク設定によっては、データを仕込む(inject)することや細工することも可能です。
 例えば、攻撃者はランサムウェアやマルウェアをウェブサイトに仕込むことができるはずです。
 
+本欠陥はWi-Fi規格そのものにあり、特定の製品や実装にあるわけはありません。
+つまり、いかなる適切なWPA2の実装であっても、影響を受ける恐れがあります。
+攻撃を防ぐため、ユーザーは影響を受ける製品のセキュリティアップデートが手に入り次第、速やかに適用すべきです。
+**あなたのデバイスがWi-Fiをサポートしているならば、まず影響を受ける恐れがある**ことに留意してください。
+我々の初期研究によれば、Android, Linux, Apple, Windows, OpenBSD, MediaTek, Linksys, およびその他はすべて、
+攻撃(some variant of the attacks)の影響を受けます。
+特定の製品に関する詳細情報は、[CERT/CCのデータベース](https://www.kb.cert.org/vuls/byvendor?searchview&Query=FIELD+Reference=228519&SearchOrder=4)を参照するか、またはベンダーに問い合わせてください。
 
-The weaknesses are in the Wi-Fi standard itself, and not in individual products or implementations.
-Therefore, any correct implementation of WPA2 is likely affected.
-To prevent the attack, users must update affected products as soon as security updates become available.
-Note that **if your device supports Wi-Fi, it is most likely affected**.
-During our initial research, we discovered ourselves that Android, Linux, Apple, Windows, OpenBSD, MediaTek, Linksys, and others, are all affected by some variant of the attacks.
-For more information about specific products, consult the [database of CERT/CC](https://www.kb.cert.org/vuls/byvendor?searchview&Query=FIELD+Reference=228519&SearchOrder=4), or contact your vendor.
-
-The research behind the attack will be presented at the [Computer and Communications Security (CCS)](https://acmccs.github.io/session-F3/) conference, and at the [Black Hat Europe](https://www.blackhat.com/eu-17/briefings/schedule/#key-reinstallation-attacks-breaking-the-wpa2-protocol-8861) conference. Our detailed research paper can already be downloaded.
+攻撃の基礎研究は[Computer and Communications Security (CCS)](https://acmccs.github.io/session-F3/)カンファレンスと[Black Hat Europe](https://www.blackhat.com/eu-17/briefings/schedule/#key-reinstallation-attacks-breaking-the-wpa2-protocol-8861)カンファレンスで公開されます。我々の詳細な研究論文はすでにダウンロードできる状態です。
 
 
 Demonstration
